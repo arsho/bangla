@@ -1,13 +1,9 @@
 language: python
 install:
-  - pip install pep8
 python:
     - "3.2"
     - "3.3"
     - "3.4"
     - "3.5"
     - "3.6"
-before_script:
-  - "pep8 --ignore=E501  bangla/__init__.py"
-  - sudo locale-gen en_US.utf8
 script: python t/test.py

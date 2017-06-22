@@ -45,7 +45,7 @@ Example
 
 To get today's date in Bangla calendar::
 
-.. code:: python
+.. code-block:: python
 
     import bangla
 	bangla_date = bangla.get_date()
@@ -54,7 +54,7 @@ To get today's date in Bangla calendar::
 	
 To convert any Gregorian date to Bangla date ::
 
-.. code:: python
+.. code-block:: python
 
     import bangla
 	bangla_date = bangla.get_date(20,6,2017) # date, month, year
@@ -63,7 +63,7 @@ To convert any Gregorian date to Bangla date ::
 	
 To convert any English numeric string to Bangla numeric string ::
 
-.. code:: python
+.. code-block:: python
 
     import bangla
 	bangla_numeric_string = bangla.convert_english_digit_to_bangla_digit("123456")
