@@ -97,4 +97,4 @@ https://github.com/nuhil/bangla-calendar
    :target: https://github.com/arsho/bangla/   
    
 .. |Codecov| image:: https://codecov.io/github/arsho/bangla/coverage.svg?branch=master
-   :target: https://github.com/arsho/bangla/      
+   :target: https://codecov.io/github/arsho/bangla      
