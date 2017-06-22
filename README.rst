@@ -1,7 +1,7 @@
 BANGLA
 ======
 
-|Build Status| |Version| |Python|
+|Build Status| |Version| |Python| |Size|
 
 Bangla is a package for Bangla language users with various functionalities including Bangla date and Bangla numeric conversation.
 
@@ -43,27 +43,27 @@ We recommend install ``bangla`` through pip install using Python 3.
 Example
 ~~~~~~~
 
-To get today's date in Bangla calendar::
+To get today's date in Bangla calendar:
 
-.. code-block:: python
+.. code:: python
 
     import bangla
 	bangla_date = bangla.get_date()
 	print(bangla_date) 
 	# Output: {'date': '৮', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'বৃহস্পতিবার'} 
 	
-To convert any Gregorian date to Bangla date ::
+To convert any Gregorian date to Bangla date :
 
-.. code-block:: python
+.. code:: python
 
     import bangla
 	bangla_date = bangla.get_date(20,6,2017) # date, month, year
 	print(bangla_date) 
 	# Output: {'date': '৬', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'মঙ্গলবার'}
 	
-To convert any English numeric string to Bangla numeric string ::
+To convert any English numeric string to Bangla numeric string :
 
-.. code-block:: python
+.. code:: python
 
     import bangla
 	bangla_numeric_string = bangla.convert_english_digit_to_bangla_digit("123456")
@@ -91,3 +91,6 @@ https://github.com/nuhil/bangla-calendar
    
 .. |Python| image:: https://img.shields.io/pypi/pyversions/bangla.svg?
    :target: https://pypi.python.org/pypi/bangla/0.0.1
+      
+.. |Size| image:: https://img.shields.io/github/size/arsho/bangla/bangla/__init__.py.svg?
+   :target: https://github.com/arsho/bangla/   
