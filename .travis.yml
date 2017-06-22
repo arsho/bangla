@@ -1,13 +1,9 @@
 language: python
 install:
-  - pip install coveralls
 python:
     - "3.2"
     - "3.3"
     - "3.4"
     - "3.5"
     - "3.6"
-script:
-  coverage run --source=bangla __init__.py test
-after_success:
-  coveralls
+script: python t/tests.py

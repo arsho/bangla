@@ -1,7 +1,7 @@
 BANGLA
 ======
 
-|Build Status| |Version| |Python| |Size| |Test Coverage|
+|Build Status| |Version| |Python| |Size|
 
 Bangla is a package for Bangla language users with various functionalities including Bangla date and Bangla numeric conversation.
 
@@ -95,6 +95,3 @@ https://github.com/nuhil/bangla-calendar
       
 .. |Size| image:: https://img.shields.io/github/size/arsho/bangla/bangla/__init__.py.svg?
    :target: https://github.com/arsho/bangla/   
-
-.. |Test Coverage| image:: https://coveralls.io/repos/arsho/bangla/badge.svg?branch=master
-   :target: https://coveralls.io/r/arsho/bangla  
