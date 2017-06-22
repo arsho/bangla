@@ -1,9 +1,15 @@
 language: python
-install:
 python:
     - "3.2"
     - "3.3"
     - "3.4"
     - "3.5"
     - "3.6"
-script: python t/tests.py
+install:
+  - pip install codecov
+
+script:
+  - coverage run t/tests.py
+
+after_success:
+  - codecov	
