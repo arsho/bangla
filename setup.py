@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
 def readme():
-    with open('README.rst', encoding='utf8') as f:
+    with open('README.rst', encoding='utf-8') as f:
         return f.read()
 setup(name='bangla',
       version='0.0.1',
