@@ -12,6 +12,14 @@ import bangla
 import locale
 
 class TestBangla(unittest.TestCase):
+    def test_greg_month_name_in_bangla(self):
+        res = bangla.convert_greg_month_name(1)
+        self.assertEqual(res, 'জানুয়ারী')
+        res = bangla.convert_greg_month_name(2)
+        self.assertEqual(res, 'ফেব্রুয়ারী')
+        res = bangla.convert_greg_month_name(4)
+        self.assertEqual(res, 'এপ্রিল')
+        
     def test_is_leap_year(self):
         is_leap_year_flag = bangla.is_leap_year(2000)
         self.assertEqual(is_leap_year_flag, 1)
