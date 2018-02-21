@@ -7,5 +7,3 @@
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
 /*.egg
-bulid/*
-build/lib.linux-x86_64-2.7
