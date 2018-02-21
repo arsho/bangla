@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import datetime
 
-def greg_months_in_bangla(greg_month_number):
+def convert_greg_month_name(greg_month_number):
     greg_months = [ 'জানুয়ারী', 'ফেব্রুয়ারী', 'মার্চ', 'এপ্রিল', 'মে', 'জুন', 'জুলাই', 'আগস্ট', 'সেপ্টেম্বর', 'অক্টোবর', 'নভেম্বর', 'ডিসেম্বর' ]
     return greg_months[greg_month_number -1]
 
