@@ -50,29 +50,29 @@ To get today's date in Bangla calendar:
 
 .. code:: python
 
-	import bangla
-	bangla_date = bangla.get_date()
-	print(bangla_date) 
-	# Output: {'date': '৮', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'বৃহস্পতিবার'} 
-    # Set ordinal=True to get the Bangla ordinal
+import bangla
+bangla_date = bangla.get_date()
+print(bangla_date)
+# Output: {'date': '৮', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'বৃহস্পতিবার'}
+# Set ordinal=True to get the Bangla ordinal
 	
 To convert any Gregorian date to Bangla date :
 
 .. code:: python
 
-    import bangla
-    bangla_date = bangla.get_date(20,6,2017) # date, month, year
-    print(bangla_date) 
-    # Output: {'date': '৬', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'মঙ্গলবার'}
+import bangla
+bangla_date = bangla.get_date(20,6,2017) # date, month, year
+print(bangla_date)
+# Output: {'date': '৬', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'মঙ্গলবার'}
 	
 To convert any English numeric string to Bangla numeric string :
 
 .. code:: python
 
-    import bangla
-    bangla_numeric_string = bangla.convert_english_digit_to_bangla_digit("123456")
-    print(bangla_numeric_string)
-    # Output: ১২৩৪৫৬
+import bangla
+bangla_numeric_string = bangla.convert_english_digit_to_bangla_digit("123456")
+print(bangla_numeric_string)
+# Output: ১২৩৪৫৬
 	
 Contributors
 ~~~~~~~~~~~~
@@ -84,7 +84,7 @@ To contribute:
 
 Create Github Pull Request https://github.com/arsho/bangla/pulls
 
-If you want to contact me you can reach me at https://arshovon.com/
+For suggestions please reach me at https://arshovon.com/
 
 Thanks
 ~~~~~~
