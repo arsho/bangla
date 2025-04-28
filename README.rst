@@ -1,7 +1,7 @@
 BANGLA
 ======
 
-|Version| |Python| |Size|
+|Python| |Size|
 
 Bangla is a Python package for converting Gregorian dates to the Bengali calendar, translating English numerals to Bangla numerals, and generating Bangla ordinals for dates.
 It computes the full Bengali calendar date, including year, month, day, weekday, season, and ordinal based on the revised Bengali calendar (https://en.wikipedia.org/wiki/Bengali_calendars) officially adopted in Bangladesh in 1987.
@@ -86,9 +86,6 @@ Thanks
 
 Influenced by বঙ্গাব্দ - jQuery Plugin 
 https://github.com/nuhil/bangla-calendar
-
-.. |Version| image:: https://img.shields.io/pypi/v/bangla.svg?
-   :target: http://badge.fury.io/py/bangla
    
 .. |Python| image:: https://img.shields.io/pypi/pyversions/bangla.svg?
    :target: https://pypi.python.org/pypi/bangla/0.0.4
