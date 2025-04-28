@@ -9,8 +9,8 @@ def readme():
 
 
 setup(name='bangla',
-      version='0.0.3',
-      description='Bangla is a package for Bangla language users with various functionalities including Bangla date and Bangla numeric conversation.',
+      version='0.0.4',
+      description='Bangla is a Python package for converting Gregorian dates to the Bengali calendar, translating English numerals to Bangla numerals, and generating Bangla ordinals for dates.',
       long_description=readme(),
       install_requires=[],
       classifiers=[

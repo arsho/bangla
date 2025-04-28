@@ -1,23 +1,19 @@
 BANGLA
 ======
 
-|Build Status| |Version| |Python| |Size| |Codecov|
+|Version| |Python| |Size|
 
-Bangla is a package for Bangla language users with various functionalities including Bangla date and Bangla numeric conversation.
+Bangla is a Python package for converting Gregorian dates to the Bengali calendar, translating English numerals to Bangla numerals, and generating Bangla ordinals for dates.
+It computes the full Bengali calendar date, including year, month, day, weekday, season, and ordinal based on the revised Bengali calendar (https://en.wikipedia.org/wiki/Bengali_calendars) officially adopted in Bangladesh in 1987.
+(For Bengali communities in India, the calendar may differ slightly.)
 
-It can be used to get Bangla date that includes year, month, date, weekday and season of Bangla year.
-Bangla has used the rules from Wikipedia https://en.wikipedia.org/wiki/Bengali_calendars to convert 
-Gregorian date to Bangla date. It is based on the revised version of the Bengali calendar which was officially adopted in Bangladesh in 1987.
-Among the Bengali community in India, the provided date may differ.
-
-Moreover, this package has also a method to convert English numeric string to Bangla numeric string.
-
-This software can be used on Linux/Unix, Mac OS and Windows systems.
+The package also allows converting English numeric strings (e.g., "123") into Bangla numerals (e.g., "১২৩").
+It is compatible with Linux, macOS, and Windows systems.
 
 Features
 ~~~~~~~~
 
--  Get Bangla date that includes:
+-  Convert Gregorian dates to Bengali calendar , including::
    - Bangla Date (১-৩১)
 
    - Bangla Month ("বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", "কার্তিক", "অগ্রহায়ণ", "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র")
@@ -37,7 +33,7 @@ Features
 Installation
 ~~~~~~~~~~~~
 
-We recommend install ``bangla`` through pip install using Python 3.
+We recommend install ``bangla`` through pip install.
 
 .. code:: bash
 
@@ -54,14 +50,14 @@ To get today's date in Bangla calendar:
     bangla_date = bangla.get_date()
     print(bangla_date)
     # Output: {'date': '৮', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'বৃহস্পতিবার'}
-    # Set ordinal=True to get the Bangla ordinal
+    # Use bangla.get_date(ordinal = True) to include the Bangla ordinal
 	
 To convert any Gregorian date to Bangla date :
 
 .. code:: python
 
     import bangla
-    bangla_date = bangla.get_date(20,6,2017) # date, month, year
+    bangla_date = bangla.get_date(20, 6, 2017) # date, month, year
     print(bangla_date)
     # Output: {'date': '৬', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'মঙ্গলবার'}
 	
@@ -76,15 +72,14 @@ To convert any English numeric string to Bangla numeric string :
 	
 Contributors
 ~~~~~~~~~~~~
-Contributors: https://github.com/arsho/bangla/graphs/contributors
 
-.. image:: https://contrib.rocks/image?repo=arsho/bangla
+|Contributors|
 
-To contribute:
+Want to contribute?
 
-Create Github Pull Request https://github.com/arsho/bangla/pulls
+Submit a Github Pull Request (must add/update unittests) https://github.com/arsho/bangla/pulls
 
-For suggestions please reach me at https://arshovon.com/
+For suggestions or feedback, please contact https://arshovon.com/
 
 Thanks
 ~~~~~~
@@ -92,17 +87,14 @@ Thanks
 Influenced by বঙ্গাব্দ - jQuery Plugin 
 https://github.com/nuhil/bangla-calendar
 
-.. |Build Status| image:: https://travis-ci.org/arsho/bangla.svg?branch=master
-   :target: https://travis-ci.org/arsho/bangla
-
 .. |Version| image:: https://img.shields.io/pypi/v/bangla.svg?
    :target: http://badge.fury.io/py/bangla
    
 .. |Python| image:: https://img.shields.io/pypi/pyversions/bangla.svg?
-   :target: https://pypi.python.org/pypi/bangla/0.0.1
+   :target: https://pypi.python.org/pypi/bangla/0.0.4
       
 .. |Size| image:: https://img.shields.io/github/size/arsho/bangla/bangla/__init__.py.svg?
    :target: https://github.com/arsho/bangla/   
-   
-.. |Codecov| image:: https://codecov.io/github/arsho/bangla/coverage.svg?branch=master
-   :target: https://codecov.io/github/arsho/bangla      
+
+.. |Contributors| image:: https://contrib.rocks/image?repo=arsho/bangla
+   :target: https://github.com/arsho/bangla/graphs/contributors
