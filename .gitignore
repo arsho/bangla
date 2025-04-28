@@ -10,3 +10,6 @@
 
 # Build folder.
 bulid/*
+.venv/*
+venv/*
+.idea/*

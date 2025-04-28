@@ -18,7 +18,6 @@ Features
 ~~~~~~~~
 
 -  Get Bangla date that includes:
-
    - Bangla Date (১-৩১)
 
    - Bangla Month ("বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", "কার্তিক", "অগ্রহায়ণ", "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র")
@@ -28,6 +27,10 @@ Features
    - Bangla Season ("গ্রীষ্ম", "বর্ষা", "শরৎ", "হেমন্ত", "শীত", "বসন্ত")
 
    - Bangla Weekday ("শনিবার", "রবিবার", "সোমবার", "মঙ্গলবার", "বুধবার", "বৃহস্পতিবার", "শুক্রবার")
+
+   - Bangla Weekday ("শনিবার", "রবিবার", "সোমবার", "মঙ্গলবার", "বুধবার", "বৃহস্পতিবার", "শুক্রবার")
+
+   - Bangla Ordinal for dates ("পহেলা", "দোসরা", "তেসরা", ... , "একত্রিশে")
 
 -  Convert English numeric string to Bangla numeric string (123456 -> ১২৩৪৫৬).
 
@@ -51,7 +54,7 @@ To get today's date in Bangla calendar:
 	bangla_date = bangla.get_date()
 	print(bangla_date) 
 	# Output: {'date': '৮', 'month': 'আষাঢ়', 'year': '১৪২৪', 'season': 'বর্ষা', 'weekday': 'বৃহস্পতিবার'} 
-
+    # Set ordinal=True to get the Bangla ordinal
 	
 To convert any Gregorian date to Bangla date :
 
@@ -71,12 +74,17 @@ To convert any English numeric string to Bangla numeric string :
     print(bangla_numeric_string)
     # Output: ১২৩৪৫৬
 	
-Contribute
-~~~~~~~~~~
+Contributors
+~~~~~~~~~~~~
+Contributors: https://github.com/arsho/bangla/graphs/contributors
+
+.. image:: https://contrib.rocks/image?repo=arsho/bangla
+
+To contribute:
 
 Create Github Pull Request https://github.com/arsho/bangla/pulls
 
-If you have suggestion use GitHub issue system or send a message in Facebook https://www.facebook.com/ars.shovon.
+If you want to contact me you can reach me at https://arshovon.com/
 
 Thanks
 ~~~~~~
