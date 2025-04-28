@@ -136,9 +136,7 @@ def convert_to_ordinal(day: str) -> str:
     return ""
 
 
-def get_date(
-    passed_date=None, passed_month=None, passed_year=None, ordinal: bool | None = False
-):
+def get_date(passed_date=None, passed_month=None, passed_year=None, ordinal: bool | None = False):
     """No Param : Get Current Date
     ordinal : if `None` or `False` doesn't return ordinal; if true, provides ordinal representation of the day
     """
@@ -153,20 +151,19 @@ def get_date(
     if passed_date <= greg_equivalent_last_day_of_bangla_months[passed_month]:
         total_days_in_current_bangla_month = total_days_in_bangla_months[passed_month]
         if (
-            passed_month == greg_equivalent_leap_year_index_in_bangla_months
-            and is_leap_year(passed_year) == 1
+                passed_month == greg_equivalent_leap_year_index_in_bangla_months
+                and is_leap_year(passed_year) == 1
         ):
             total_days_in_current_bangla_month += 1
         bangla_date = (
-            total_days_in_current_bangla_month
-            + passed_date
-            - greg_equivalent_last_day_of_bangla_months[passed_month]
+                total_days_in_current_bangla_month + passed_date
+                - greg_equivalent_last_day_of_bangla_months[passed_month]
         )
         bangla_month_index = passed_month
         bangla_month = greg_equivalent_bangla_months[bangla_month_index]
     else:
         bangla_date = (
-            passed_date - greg_equivalent_last_day_of_bangla_months[passed_month]
+                passed_date - greg_equivalent_last_day_of_bangla_months[passed_month]
         )
         bangla_month_index = (passed_month + 1) % 12
         bangla_month = greg_equivalent_bangla_months[bangla_month_index]
@@ -182,8 +179,6 @@ def get_date(
     }
 
     if ordinal:
-        bangla_date_month_year_season["ordinal"] = convert_to_ordinal(
-            bangla_date_month_year_season["date"]
-        )
+        bangla_date_month_year_season["ordinal"] = convert_to_ordinal(bangla_date_month_year_season["date"])
 
     return bangla_date_month_year_season
