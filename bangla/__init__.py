@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import annotations
+
 import datetime
 
 bangla_number = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"]
