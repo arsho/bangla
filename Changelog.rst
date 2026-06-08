@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.0.6 (2026-06-08)
+------------------
+- Improved performance
+- Improved comments
+- Increased tests
+- Replaced datatime object with Zeller's formula
+- Added packaging config
+
 0.0.5 (2025-04-27)
 ------------------
 - Removed codecode and Travis CI
